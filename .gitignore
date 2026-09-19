@@ -1,0 +1,13 @@
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.env.*
+repos
+__pycache__
+*.pyc
+.vscode
+.idea
+.DS_Store
+Thumbs.db
