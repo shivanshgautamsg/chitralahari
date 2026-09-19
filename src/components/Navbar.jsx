@@ -1,10 +1,11 @@
 import React from 'react';
-import { Scissors, Image as ImageIcon, Video, Mic2, Settings, Sparkles } from 'lucide-react';
+import { Scissors, Image as ImageIcon, Video, Clapperboard, Mic2, Settings, Sparkles } from 'lucide-react';
 
 export const STUDIOS = [
   { id: 'shorts', name: 'Shorts Maker', icon: Scissors },
   { id: 'image', name: 'Image Creator', icon: ImageIcon },
   { id: 'video', name: 'Video Generator', icon: Video },
+  { id: 'cinema', name: 'Cinema Director', icon: Clapperboard },
   { id: 'lipsync', name: 'Talking Avatar', icon: Mic2 },
 ];
 
@@ -48,13 +49,13 @@ export default function Navbar({ activeTab, onSelectTab, onOpenSettings }) {
             Chitraleheri
           </h1>
           <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-            Simple AI Video & Image Studio
+            AI Video, Cinema & Creative Studio
           </p>
         </div>
       </div>
 
       {/* Simplified Navigation Tabs */}
-      <nav style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.04)', padding: '4px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
+      <nav style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'rgba(255, 255, 255, 0.04)', padding: '4px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
         {STUDIOS.map((studio) => {
           const Icon = studio.icon;
           const isActive = activeTab === studio.id;
@@ -66,7 +67,7 @@ export default function Navbar({ activeTab, onSelectTab, onOpenSettings }) {
               className="btn btn-sm"
               style={{
                 gap: '8px',
-                padding: '8px 16px',
+                padding: '8px 14px',
                 fontSize: '0.85rem',
                 borderRadius: '8px',
                 backgroundColor: isActive ? 'var(--accent-primary)' : 'transparent',
@@ -77,7 +78,7 @@ export default function Navbar({ activeTab, onSelectTab, onOpenSettings }) {
                 transition: 'all 0.2s ease',
               }}
             >
-              <Icon size={16} />
+              <Icon size={15} />
               <span>{studio.name}</span>
             </button>
           );

@@ -4,6 +4,7 @@ import SettingsModal from './components/SettingsModal';
 import ShortsStudio from './components/ShortsStudio/ShortsStudio';
 import ImageStudio from './components/ImageStudio/ImageStudio';
 import VideoStudio from './components/VideoStudio/VideoStudio';
+import CinemaStudio from './components/CinemaStudio/CinemaStudio';
 import LipSyncStudio from './components/LipSyncStudio/LipSyncStudio';
 
 export default function App() {
@@ -57,6 +58,10 @@ export default function App() {
 
         {activeTab === 'video' && (
           <VideoStudio incomingImageUrl={passedImageUrl} />
+        )}
+
+        {activeTab === 'cinema' && (
+          <CinemaStudio onSendToVideo={handleSendToVideo} />
         )}
 
         {activeTab === 'lipsync' && (
