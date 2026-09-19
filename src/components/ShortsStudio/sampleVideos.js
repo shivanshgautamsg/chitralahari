@@ -9,7 +9,7 @@ export const SAMPLE_VIDEOS = [
     title: 'The Unfiltered Truth About Autonomous AI Agents',
     category: 'Tech & AI Podcast',
     duration: 165, // 2m 45s
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+    videoUrl: 'https://vjs.zencdn.net/v/oceans.mp4',
     thumbnail: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
     description: 'Silicon Valley founder breaks down why single LLM chats are dying and multi-agent workflows are replacing software companies.',
     transcript: {
@@ -39,7 +39,7 @@ export const SAMPLE_VIDEOS = [
     title: 'The Counter-Intuitive Pricing Hack That Doubled Revenue',
     category: 'Business & Psychology',
     duration: 140,
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+    videoUrl: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
     thumbnail: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80',
     description: 'Behavioral economics breakdown of why removing options increases purchase rates by over 200%.',
     transcript: {
@@ -61,7 +61,7 @@ export const SAMPLE_VIDEOS = [
     title: 'How The Top 0.1% Editors Hook You in 2.8 Seconds',
     category: 'Creator Strategy',
     duration: 150,
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+    videoUrl: 'https://vjs.zencdn.net/v/oceans.mp4',
     thumbnail: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80',
     description: 'Frame-by-frame analysis of TikTok & YouTube Shorts hooks that retain 90%+ of first-time viewers.',
     transcript: {
